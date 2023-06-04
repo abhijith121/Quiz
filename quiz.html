@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizapp</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <div class="start-screen">
+      <img src="logo.webp" alt="no image">
+      <h1>HELLO USER!</h1>
+      <form>
+        <input type="text" class="name" id="Name" placeholder="Enter your name"><button id="saveName">Enter</button>
+      </form>
+      <p style="color: aquamarine;">You will have 10 sec to answer each question</p>
+      <div class="a">Select a category from below</div>
+      <div class="category">
+        <button id="start-button1">Problem on ages</button>
+        <button id="start-button2">pipes and cisterns</button>
+        <button id="start-button3">Profit and loss</button>
+        <button id="start-button4">probability</button>
+      </div>
+    </div>
+    <div id="display-container" class="hide">
+      <div class="header">
+        <div class="timer-div">
+          <span class="time-left">10</span>
+        </div>
+        <div class="number-of-count">
+          <span class="number-of-question">1/10</span>
+        </div>
+        <span id="scoreboard">current score = 0</span>
+      </div>
+      <div id="container">
+        <!-- questions and options will be displayed here -->
+      </div>
+      <button id="next-button1" class="hide">Next</button>
+      <button id="next-button2" class="hide">Next</button>
+      <button id="next-button3" class="hide">Next</button>
+      <button id="next-button4" class="hide">Next</button>
+    </div>
+    <div class="score-container hide">
+      <div id="user-score">
+        <p><b id="userName"></b> your result is:</p>
+        <p>Total time taken : <span id="tt"></span></p>
+        <p>Attempt : <span id="Attempted"></span></p>
+        <p>Right : <span id="right"></span></p>
+        <p>Wrong : <span id="wrong"></span></p>
+        <p>Score : <span id="score"></span></p>
+        <p>percentage : <span id="percent"></span></p>
+      </div>
+      <div class="final-interactions">
+        <button id="restart1" class="hide restart">Start again</button>
+        <button id="restart2" class="hide restart">Start again</button>
+        <button id="restart3" class="hide restart">Start again</button>
+        <button id="restart4" class="hide restart">Start again</button>
+        <button id="home">Home</button>
+      </div>
+      
+    </div>
+    <!-- Script -->
+    <script src="quiz.js"></script>
+  </body>
+</html>
